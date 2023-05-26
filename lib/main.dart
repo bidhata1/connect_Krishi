@@ -18,12 +18,10 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Connect Krishi',
-      theme: ThemeData(
-        primarySwatch: Colors.green,
-        visualDensity: VisualDensity.adaptivePlatformDensity,
-      ),
-      home: const SplashScreen(),
+     routes: {
+    '/': (context) => const Center(child: SplashScreen()),
+    // '/details': (context) => DetailsScreen(),
+  },
     );
   }
 }

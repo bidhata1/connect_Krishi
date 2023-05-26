@@ -55,8 +55,8 @@ class _SplashScreenState extends State<SplashScreen>
                 child: AnimatedContainer(
                   duration: const Duration(seconds: 1),
                   curve: Curves.easeInOut,
-                  width: _animation.value * 200, // Adjust the size of the animation
-                  height: _animation.value * 200, // Adjust the size of the animation
+                  width: _animation.value * 300, // Adjust the size of the animation
+                  height: _animation.value * 300, // Adjust the size of the animation
                   decoration: const BoxDecoration(
                     shape: BoxShape.circle,
                     color: Colors.white, // Set the color of the animated container
