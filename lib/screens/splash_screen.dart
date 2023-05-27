@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+
 class SplashScreen extends StatefulWidget {
   const SplashScreen({super.key});
 
@@ -50,16 +51,21 @@ class _SplashScreenState extends State<SplashScreen>
         child: Column(
           children: [
             SizedBox(
-              height: MediaQuery.of(context).size.height, // Set the height of the container to match the screen height
+              height: MediaQuery.of(context)
+                  .size
+                  .height, // Set the height of the container to match the screen height
               child: Center(
                 child: AnimatedContainer(
                   duration: const Duration(seconds: 1),
                   curve: Curves.easeInOut,
-                  width: _animation.value * 300, // Adjust the size of the animation
-                  height: _animation.value * 300, // Adjust the size of the animation
+                  width: _animation.value *
+                      200, 
+                  height: _animation.value *
+                      200, 
                   decoration: const BoxDecoration(
                     shape: BoxShape.circle,
-                    color: Colors.white, // Set the color of the animated container
+                    color:
+                        Colors.white, // Set the color of the animated container
                   ),
                   child: Column(
                     mainAxisAlignment: MainAxisAlignment.center,
