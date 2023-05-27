@@ -1,4 +1,6 @@
+import 'package:connect_krishi/main.dart';
 import 'package:flutter/material.dart';
+
 class SplashScreen extends StatefulWidget {
   const SplashScreen({super.key});
 
@@ -14,6 +16,7 @@ class _SplashScreenState extends State<SplashScreen>
   @override
   void initState() {
     super.initState();
+    // _navigatetolandingPage();
 
     _animationController = AnimationController(
       vsync: this,
@@ -32,10 +35,19 @@ class _SplashScreenState extends State<SplashScreen>
         // Animation completed, navigate to the next screen
         // Use Navigator.pushReplacement() to replace the splash screen
         // with the next screen in the navigation stack
+        Navigator.pushReplacement(context,
+            MaterialPageRoute(builder: (context) => const LandingPage()));
       }
     });
   }
 
+/*
+  _navigatetolandingPage() async {
+    await Future.delayed(const Duration(milliseconds: 1500), () {});
+    Navigator.pushReplacement(
+        context, MaterialPageRoute(builder: (context) => LandingPage()));
+  }
+*/
   @override
   void dispose() {
     _animationController.dispose();
@@ -50,16 +62,21 @@ class _SplashScreenState extends State<SplashScreen>
         child: Column(
           children: [
             SizedBox(
-              height: MediaQuery.of(context).size.height, // Set the height of the container to match the screen height
+              height: MediaQuery.of(context)
+                  .size
+                  .height, // Set the height of the container to match the screen height
               child: Center(
                 child: AnimatedContainer(
                   duration: const Duration(seconds: 1),
                   curve: Curves.easeInOut,
-                  width: _animation.value * 200, // Adjust the size of the animation
-                  height: _animation.value * 200, // Adjust the size of the animation
+                  width: _animation.value *
+                      200, // Adjust the size of the animation
+                  height: _animation.value *
+                      200, // Adjust the size of the animation
                   decoration: const BoxDecoration(
                     shape: BoxShape.circle,
-                    color: Colors.white, // Set the color of the animated container
+                    color:
+                        Colors.white, // Set the color of the animated container
                   ),
                   child: Column(
                     mainAxisAlignment: MainAxisAlignment.center,
