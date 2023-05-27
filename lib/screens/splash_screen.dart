@@ -1,4 +1,4 @@
-import 'package:connect_krishi/main.dart';
+import 'package:connect_krishi/screens/login.dart';
 import 'package:flutter/material.dart';
 
 class SplashScreen extends StatefulWidget {
@@ -36,7 +36,7 @@ class _SplashScreenState extends State<SplashScreen>
         // Use Navigator.pushReplacement() to replace the splash screen
         // with the next screen in the navigation stack
         Navigator.pushReplacement(context,
-            MaterialPageRoute(builder: (context) => const LandingPage()));
+            MaterialPageRoute(builder: (context) => LoginScreen()));
       }
     });
   }
