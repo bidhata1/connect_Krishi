@@ -32,7 +32,7 @@ class LoginScreen extends StatelessWidget {
             Padding(
               padding: const EdgeInsets.only(top: 50.0),
               child: Center(
-                child: Container(
+                child: SizedBox(
                     width: 200,
                     height: 150,
                     /*decoration: BoxDecoration(
@@ -42,8 +42,8 @@ class LoginScreen extends StatelessWidget {
               ),
             ),
             const Padding(
-              padding: const EdgeInsets.only(
-                  left: 25.0, right: 25.0, top: 50, bottom: 0),
+              padding:
+                  EdgeInsets.only(left: 25.0, right: 25.0, top: 50, bottom: 0),
               //padding: EdgeInsets.symmetric(horizontal: 20),
               child: TextField(
                 decoration: InputDecoration(

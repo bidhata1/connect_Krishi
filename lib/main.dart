@@ -20,7 +20,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       routes: {
         '/': (context) => const Center(child: SplashScreen()),
-        '/login':(context) => LoginScreenApp(),
+        '/login': (context) => LoginScreenApp(),
         '/signup': (context) => const SignupScreen()
       },
     );
