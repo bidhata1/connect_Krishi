@@ -1,6 +1,7 @@
 import 'package:connect_krishi/screens/login.dart';
 import 'package:connect_krishi/screens/signup.dart';
 import 'package:connect_krishi/screens/splash_screen.dart';
+import 'package:connect_krishi/screens/widgets/product_card.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
@@ -19,9 +20,10 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       routes: {
-        '/': (context) => const Center(child: SplashScreen()),
-        '/login':(context) => LoginScreenApp(),
-        '/signup': (context) => const SignupScreen()
+        // '/': (context) => const SplashScreen(),
+        '/':(context) => const LoginScreenApp(),
+        '/signup': (context) => const SignupScreen(),
+        '/home': (context) => const ProductScreen(),
       },
     );
   }

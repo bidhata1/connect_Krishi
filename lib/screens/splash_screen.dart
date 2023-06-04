@@ -1,6 +1,10 @@
 import 'package:connect_krishi/screens/login.dart';
 import 'package:flutter/material.dart';
 
+void main() {
+  runApp(const SplashScreen());
+}
+
 class SplashScreen extends StatefulWidget {
   const SplashScreen({super.key});
 
@@ -32,9 +36,6 @@ class _SplashScreenState extends State<SplashScreen>
 
     _animationController.addStatusListener((status) {
       if (status == AnimationStatus.completed) {
-        // Animation completed, navigate to the next screen
-        // Use Navigator.pushReplacement() to replace the splash screen
-        // with the next screen in the navigation stack
         Navigator.pushReplacement(context,
             MaterialPageRoute(builder: (context) => LoginScreen()));
       }

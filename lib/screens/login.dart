@@ -1,11 +1,13 @@
-import 'package:connect_krishi/screens/signup.dart';
+
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(LoginScreenApp());
+  runApp(const LoginScreenApp());
 }
 
 class LoginScreenApp extends StatelessWidget {
+  const LoginScreenApp({super.key});
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -14,12 +16,14 @@ class LoginScreenApp extends StatelessWidget {
         primarySwatch: Colors.green,
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
-      home: LoginScreen(),
+      home: const LoginScreen(),
     );
   }
 }
 
 class LoginScreen extends StatelessWidget {
+  const LoginScreen({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -32,7 +36,7 @@ class LoginScreen extends StatelessWidget {
             Padding(
               padding: const EdgeInsets.only(top: 50.0),
               child: Center(
-                child: Container(
+                child: SizedBox(
                     width: 200,
                     height: 150,
                     /*decoration: BoxDecoration(
@@ -42,7 +46,7 @@ class LoginScreen extends StatelessWidget {
               ),
             ),
             const Padding(
-              padding: const EdgeInsets.only(
+              padding: EdgeInsets.only(
                   left: 25.0, right: 25.0, top: 50, bottom: 0),
               //padding: EdgeInsets.symmetric(horizontal: 20),
               child: TextField(
@@ -74,10 +78,7 @@ class LoginScreen extends StatelessWidget {
             const SizedBox(height: 8.0),
             TextButton(
               onPressed: () {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(builder: (context) => const SignupScreen()),
-                );
+                Navigator.pushNamed(context, '/home');
               },
               child: const Text('Don\'t have an account? Create one'),
             ),
