@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "384097211371",
+    "firebase_url": "https://connect-krishi-default-rtdb.firebaseio.com",
+    "project_id": "connect-krishi",
+    "storage_bucket": "connect-krishi.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:384097211371:android:0bd14bc3078c5d63bc7fae",
+        "android_client_info": {
+          "package_name": "com.example.connect_krishi"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC9jv_ewBwPIYW76ipGjZZV3-JxAdVVOvY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
