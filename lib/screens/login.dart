@@ -1,3 +1,4 @@
+import 'package:connect_krishi/screens/reset_password.dart';
 import 'package:connect_krishi/screens/signup.dart';
 import 'package:flutter/material.dart';
 import 'package:connect_krishi/reusable_widgets/resuable_widget.dart';
@@ -190,7 +191,7 @@ class _LoginScreenState extends State<LoginScreen> {
           textAlign: TextAlign.right,
         ),
         onPressed: () => Navigator.push(context,
-            MaterialPageRoute(builder: (context) => const LoginScreen())),
+            MaterialPageRoute(builder: (context) => const ResetPassword())),
       ),
     );
   }
