@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "319158259971",
+    "project_id": "new-connectkrishi",
+    "storage_bucket": "new-connectkrishi.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:319158259971:android:b14f47e1c922bee8cf9936",
+        "android_client_info": {
+          "package_name": "com.example.e_commerce_app_flutter"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "319158259971-8rh9mqa1lggasd3kdtt5ovc0h1dp9jge.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCh_S7zZ5WYZA8hMmzPREE_Y5nZ-eJWS8Y"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "319158259971-8rh9mqa1lggasd3kdtt5ovc0h1dp9jge.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
